@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Memory Game!</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Memory Game!</h1>
+    <h3 id="lowscore"></h3>
+    <form id = "form">
+    <label for="matches">How Many Matches Would you like to play to?
+      <input name="matches" id = "matches" value ="5"type="number">
+      <input type="submit" id="start" value="Start Game">
+    </label>
+    </form>
+    <button id="expertMode">Enter Expert Mode</button>
+  <h2>Trys <span id="score">0</span></h2>
+    
+    <div id="game">
+    </div>
+
+    <script src="mousemap.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
