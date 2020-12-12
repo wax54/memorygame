@@ -13,7 +13,7 @@ body{
   transition: all 500ms;
   border-radius: 10px;
   background-color: black;
-  background-image: url(http://www.jimknapp.com/Cards/Non-Bicycle_files/image001.jpg);
+  background-image: url(cardback.jpg);
   background-size: 100% 100%;
   
 }
