@@ -2,7 +2,7 @@ body{
   background-color:forestgreen;
 }
 #game{
-  text-align: center;
+  /* text-align: center; */
 }
 #game div {
   border: 0px solid black;

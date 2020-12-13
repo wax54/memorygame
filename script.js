@@ -28,7 +28,6 @@ const matchesinput = document.querySelector('#matches');
 const expertmodebutton = document.getElementById('expertMode');
 
 //click the start button to start the game
-startbutton.addEventListener("click", startGame);
 form.addEventListener("submit", function(e){
   e.preventDefault();
   startGame();
@@ -88,8 +87,6 @@ function startGame(){
   //reset COLORS to an empty string
   items = [];
   for(let i = 0; i<numofpairs;i++){
-   
-    
     //let data = randAttributePair();
     let data = [];
     data.value = randomHSL();
@@ -98,8 +95,6 @@ function startGame(){
 
     items.push(data, data);
 }
-
-
   // when the DOM loads
   createDivsWithData(shuffle(items));
 
@@ -179,6 +174,7 @@ function randAttributePair(){
 // attributes based on the data in dataArray 
 // it also adds an event listener for a click for each card
 function createDivsWithData(dataArray) {
+  let i = 0;
   for (let data of dataArray) {
     // create a new div
     const newDiv = document.createElement("div");
@@ -193,7 +189,10 @@ function createDivsWithData(dataArray) {
     newDiv.addEventListener("click", handleCardClick);
 
     // append the div to the element with an id of game
-    gameContainer.append(newDiv);
+    setTimeout(function(){
+      gameContainer.append(newDiv);
+    },i);
+    i += 100;
   }
 }
 
